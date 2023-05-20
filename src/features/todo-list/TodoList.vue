@@ -16,7 +16,7 @@ const handleToggleIsCompleted = (todoId: string) => {
 </script>
 
 <template>
-    <div class="p-1">
+    <div class="p-4 bg-white rounded-lg shadow-md flex flex-col gap-2">
         <div class="flex justify-between">
             <h2 class="font-bold">Lista todo</h2>
             <p class="font-bold">Wykonane: {{ store.todosCompletedSize }}</p>

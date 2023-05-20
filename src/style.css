@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 14px;
+    color: #384a5c;
+    border-color: #b2b2b2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+}
+
+input[type="checkbox"]:checked,
+button:checked {
+    background-color: #862583;
+}
+
+input:active,
+input:focus {
+    outline: none;
+}
+
 main {
     max-width: 1180px;
+}
+
+body {
+    background-color: #f5f8fa;
 }

@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { todoListExampleData } from "./todo-list.example-data";
 import { Todo } from "./todo-list.interface";
+import { generateId } from "../../shared/helpers/generateId";
 
 export const useTodosStore = defineStore('todos', {
     state: () => {
@@ -17,7 +18,7 @@ export const useTodosStore = defineStore('todos', {
     },
     actions: {
         addTodo(todoName: string) {
-            const id = Math.floor((Math.random() * 10000)).toString();
+            const id = generateId();
             this.todoList.set(id, {id, todoName, isCompleted: false});
         },
         toggleIsCompleted(todoId: string) {

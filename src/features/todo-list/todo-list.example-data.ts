@@ -1,23 +1,24 @@
+import { generateId } from "../../shared/helpers/generateId";
 import { Todo } from "./todo-list.interface";
 
 export const todoListExampleData: Todo[] = [
     {
-        id: '1',
+        id: generateId(),
         todoName: 'first todo',
         isCompleted: false
     },
     {
-        id: '2',
+        id: generateId(),
         todoName: 'second todo',
         isCompleted: false
     },
     {
-        id: '3',
+        id: generateId(),
         todoName: 'third todo',
         isCompleted: false
     },
     {
-        id: '4',
+        id: generateId(),
         todoName: 'fourth todo',
         isCompleted: false
     }
