@@ -18,7 +18,7 @@ const store = useProductListStore();
                 <tr v-for="[key, value], index in store.productList" class="border-b-[1px]">
                     <td>{{ index }}</td>
                     <td>{{ value.name }}</td>
-                    <td>{{ value.discount ? value.price - value.discount : '' }}</td>
+                    <td>{{ value.discountPrice ?? '' }}</td>
                     <td>{{ value.price }}</td>
                     <td>{{ value.currency }}</td>
                 </tr>

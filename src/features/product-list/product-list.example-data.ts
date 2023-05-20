@@ -5,7 +5,7 @@ export const productListExampleData: Product[] = [
     {
         id: generateId(),
         name: 'iPhone 6s Plus 16GB',
-        discount: 351,
+        discountPrice: 649,
         price: 1000,
         imgUrl: '/img1.png',
         currency: Currency.USD
@@ -13,7 +13,7 @@ export const productListExampleData: Product[] = [
     {
         id: generateId(),
         name: 'iPad Pro 32GB',
-        discount: 200,
+        discountPrice: 600,
         price: 800,
         imgUrl: '/img2.png',
         currency: Currency.USD
@@ -21,7 +21,7 @@ export const productListExampleData: Product[] = [
     {
         id: generateId(),
         name: 'MacBook Pro',
-        discount: null,
+        discountPrice: null,
         price: 8000,
         imgUrl: '/img3.png',
         currency: Currency.PLN
