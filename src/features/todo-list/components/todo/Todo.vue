@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
     <li class="flex border-b-[1px] border-black">
-        <input type="checkbox" :checked="todo.isCompleted" />
-        <p>{{ todo.text }}</p>
+        <input @click="$emit('toggleIsCompleted', todo.id)" type="checkbox" :checked="todo.isCompleted" />
+        <p>{{ todo.todoName }}</p>
     </li>
 </template>
