@@ -10,6 +10,28 @@ export const useProductListStore = defineStore('productList', {
             productList.set(product.id, product);
         })
 
-        return {productList}
+        return {
+            productList,
+            selectedProduct: null as Product | null
+        }
+    },
+    getters: {
+        isModalVisible: state => !!state.selectedProduct
+    },
+    actions: {
+        removeSelectedProduct() {
+            this.selectedProduct = null;
+        },
+        selectProductById(productId: string) {
+            console.log("asd");
+            
+            this.selectedProduct = this.productList.get(productId)!;
+        },
+        updateProduct(product: Product) {
+            console.log(product.id);
+            
+            
+            this.productList.set(product.id, product);
+        }
     }
 })
